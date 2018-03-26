@@ -1,58 +1,72 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-.container{
-  padding: 0 1rem;
+
+.container {
+    padding: 0 1rem;
 }
-.title{
-  text-align:center;
+
+.title {
+    font-size: 3rem;
+    margin: 10px 0 20px 0;
+    text-align: center;
 }
-#form{
-  display:flex;
-  justify-content: center;
-  flex-direction:column;
+
+#form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
-#input:focus, #searchButton:focus{
-  outline:none;
+
+#input:focus,
+#searchButton:focus {
+    outline: none;
 }
-#input{
-  margin: 0 auto;
-  width: 70%;
-  border: 2px solid #333;
-  height: 30px;
-  border-radius: 20px;
-  font-size:1.5rem;
-  padding: 3px 10px;
-  
+
+#input {
+    margin: 0 auto;
+    width: 70%;
+    border: 2px solid #333;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    padding: 3px 10px;
 }
-#searchButton{
-  background-color: #444;
-  border: 2px solid #666;
-  border-radius: 20px;
-  padding: 5px 10px;
-  color:#fff;
-  cursor:pointer;
+
+#searchButton {
+    background-color: #444;
+    border: 2px solid #666;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
 }
-.buttons{
-  margin-top: 15px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 1.3rem;
+
+.buttons {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.3rem;
 }
-.buttons a, .item a{
-  color: #333;
+
+.buttons a,
+.item a {
+    color: #333;
     text-decoration: none;
 }
-.item{
-  padding: 10px 20px;
-  border-left: 6px solid #444;
-  margin-bottom: 10px;
+
+.item {
+    padding: 10px 20px;
+    border-left: 6px solid #444;
+    margin-bottom: 10px;
 }
-.item h4{
-  font-size: 1.3rem;
+
+.item h4 {
+    font-size: 1.3rem;
 }
-.item:hover{
-  border-left: 6px solid #00f;
-  cursor:pointer;
+
+.item:hover {
+    border-left: 6px solid #00f;
+    cursor: pointer;
 }
