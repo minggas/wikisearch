@@ -1,72 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Aria, 'Helvetica', sans-serif;
 }
-
-.container {
-    padding: 0 1rem;
+body{
+  background: #ccc;
 }
-
-.title {
-    font-size: 3rem;
-    margin: 10px 0 20px 0;
-    text-align: center;
+.container{
+  padding: 0 1rem;
 }
-
-#form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.title{
+  font-size: 3rem;
+  margin: 10px 0 20px 0;
+  text-align:center;
 }
-
-#input:focus,
-#searchButton:focus {
-    outline: none;
+#form{
+  display:flex;
+  justify-content: center;
+  flex-direction:column;
 }
-
-#input {
-    margin: 0 auto;
-    width: 70%;
-    border: 2px solid #333;
-    height: 30px;
-    border-radius: 20px;
-    font-size: 1.5rem;
-    padding: 3px 10px;
+#input:focus, #searchButton:focus{
+  outline:none;
 }
+#input{
+  margin: 0 auto;
+  width: 60%;
+  border: 2px solid #333;
+  height: 30px;
+  border-radius: 20px;
+  font-size:1.5rem;
+  padding: 3px 10px;
 
-#searchButton {
-    background-color: #444;
-    border: 2px solid #666;
-    border-radius: 20px;
-    padding: 5px 10px;
-    color: #fff;
-    cursor: pointer;
 }
-
-.buttons {
-    margin-top: 15px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 1.3rem;
+#searchButton{
+  background-color: #444;
+  border: 2px solid #666;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color:#fff;
+  cursor:pointer;
 }
-
-.buttons a,
-.item a {
-    color: #333;
+.buttons{
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.buttons a, .item a{
+  color: #333;
     text-decoration: none;
 }
-
-.item {
-    padding: 10px 20px;
-    border-left: 6px solid #444;
-    margin-bottom: 10px;
+.item{
+  padding: 10px 20px;
+  border-left: 6px solid #444;
+  margin-bottom: 10px;
+  background-color: #aaa;
+  border-radius: 3px;
+ }
+.item a{
+  color: #333;
 }
-
-.item h4 {
-    font-size: 1.3rem;
+.item h4{
+  font-size: 1.3rem;
 }
-
-.item:hover {
-    border-left: 6px solid #00f;
-    cursor: pointer;
+.item:hover, .item:focus{
+  border-left: 6px solid #00f;
+  cursor:pointer;
+  box-shadow: 1px 1px 5px #000;
+}
+.item:hover a, .item:focus a{
+  color: #24a;
+}
+#searchButton:active{
+  background-color: #5af;
 }
