@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Minggas">
+    <meta name="description" content="Search articles on Wikipedia with this clean and direct web app.">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Wiki Search</title>
 </head>
 
 <body>
-    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Page</a>
-    <form id="form" autocomplete="off">
-        <input type="text" id="input">
-        <button id="searchButton">Search</button>
-    </form>
-    <div id='items'></div>
+  <h1 class="title">WikiSearch</h1>
+<form id="form" autocomplete="off">
+<input type="text" id="input">
+<div class="buttons">
+<a  href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Random Page</a>
+<button id="searchButton">Search</button>
+</div>
+</form>
+<div class="container">
+<div id='items'></div>
+</div>
     <script src="js/main.js"></script>
 </body>
 
