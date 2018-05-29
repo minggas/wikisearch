@@ -1,76 +1,107 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: Aria, 'Helvetica', sans-serif;
 }
-body{
+
+body {
   background: #ccc;
 }
-.container{
+a{
+  text-decoration: none;
+}
+.container {
   padding: 0 1rem;
 }
-.title{
+
+.title {
   font-size: 3rem;
   margin: 10px 0 20px 0;
-  text-align:center;
+  text-align: center;
 }
-#form{
-  display:flex;
+
+#form {
+  display: flex;
   justify-content: center;
-  flex-direction:column;
+  flex-direction: column;
 }
-#input:focus, #searchButton:focus{
-  outline:none;
+
+#input:focus,
+#searchButton:focus {
+  outline: none;
 }
-#input{
+
+#input {
   margin: 0 auto;
   width: 60%;
   border: 2px solid #333;
   height: 30px;
   border-radius: 20px;
-  font-size:1.5rem;
+  font-size: 1.5rem;
   padding: 3px 10px;
-
 }
-#searchButton{
+
+#searchButton {
+  right:12%;
+}
+.buttons.random{
+  top: -68px;
+    left: 12%;
+    width: 10rem;
+}
+
+.buttons {
+  position: relative;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 8rem;
   background-color: #444;
   border: 2px solid #666;
   border-radius: 20px;
   padding: 5px 10px;
-  color:#fff;
-  cursor:pointer;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px auto 10px;
 }
-.buttons{
-  margin-top: 15px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 1.3rem;
+
+.item a {
+  color: #333;  
 }
-.buttons a, .item a{
-  color: #333;
-    text-decoration: none;
-}
-.item{
+
+.item {
   padding: 10px 20px;
   border-left: 6px solid #444;
   margin-bottom: 10px;
   background-color: #aaa;
   border-radius: 3px;
- }
-.item a{
+  line-height: 1.5rem;
+}
+
+.item a {
   color: #333;
 }
-.item h4{
-  font-size: 1.3rem;
+
+.item dt {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-.item:hover, .item:focus{
+
+.item:hover,
+.item:active {
   border-left: 6px solid #00f;
-  cursor:pointer;
+  cursor: pointer;
   box-shadow: 1px 1px 5px #000;
 }
-.item:hover a, .item:focus a{
-  color: #24a;
-}
-#searchButton:active{
+
+#searchButton:active {
   background-color: #5af;
+}
+@media only screen and (max-width: 600px){
+  .buttons{
+    position: static;
+  }
+  .buttons.random{
+    margin-top: 0;
+  }
 }
