@@ -21,6 +21,7 @@ $(document).ready(function () {
         );
       });
     });
+    this.reset();
   }
 
   //Call function on submit
