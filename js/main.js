@@ -1,6 +1,6 @@
 /* jshint esversion:6 */
-$(document).ready(function () {
-  const $items = $("#items");
+$(document).ready(function() {
+  const $items = $(".container");
   const $searchBtn = $("#form");
 
   //Call the Wiki API, get results and render on the page
@@ -13,7 +13,9 @@ $(document).ready(function () {
       response.query.search.forEach(item => {
         $items.append(
           `<dl class="item">
-            <a target="_blank" href="http://en.wikipedia.org/?curid=${item.pageid}">
+            <a target="_blank" href="http://en.wikipedia.org/?curid=${
+              item.pageid
+            }">
               <dt>${item.title}</dt>
               <dd>${item.snippet}</dd>
             </a>
@@ -21,6 +23,8 @@ $(document).ready(function () {
         );
       });
     });
+    this.searchInput.blur();
+    this.submitBtn.blur();
     this.reset();
   }
 
